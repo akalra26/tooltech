@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tooltech/static/css/main.db62923b.css",
+    "main.js": "/tooltech/static/js/main.d7abd277.js",
+    "static/js/453.e3be9d06.chunk.js": "/tooltech/static/js/453.e3be9d06.chunk.js",
+    "static/media/logo.svg": "/tooltech/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tooltech/index.html",
+    "main.db62923b.css.map": "/tooltech/static/css/main.db62923b.css.map",
+    "main.d7abd277.js.map": "/tooltech/static/js/main.d7abd277.js.map",
+    "453.e3be9d06.chunk.js.map": "/tooltech/static/js/453.e3be9d06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db62923b.css",
+    "static/js/main.d7abd277.js"
+  ]
+}
