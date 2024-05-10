@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ToolTechNavbar from './Navbar';
+import ToolTechFooter from './Footer';
+import HomePage from './Components/Homepage';
+import {createBrowserHistory} from 'history';
+import AboutUsPage from './Components/AboutUs';
+import InfrastructurePage from './Components/Infrastructure';
+import DesignAndEngineeringPage from './Components/DesignAndEngineering';
 
+const history = createBrowserHistory();
 function App() {
   return (
+    <Router history = {history}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToolTechNavbar/>
+      <Routes>
+      <Route exact path='/' Component={HomePage} />
+      <Route path='/aboutus' Component={AboutUsPage} />
+      <Route path='/infrastructure' Component={InfrastructurePage} />
+      <Route path='/design&Engineering' Component={DesignAndEngineeringPage} />
+      </Routes>
+      <ToolTechFooter/>
     </div>
+    </Router>
   );
 }
 
